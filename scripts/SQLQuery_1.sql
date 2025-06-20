@@ -1,0 +1,10 @@
+DROP TABLE Locacao
+CREATE TABLE Locacao (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Nome NVARCHAR(255),
+    Email NVARCHAR(150),
+    Modelo NVARCHAR(100),
+    Ano INT NOT NULL,
+    TempoAluguel NVARCHAR(50) NOT NULL,
+    DataInscricao DATETIME2 DEFAULT GETDATE()
+)
