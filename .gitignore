@@ -1,0 +1,108 @@
+# Arquivos gerados pelo Visual Studio
+.vs/
+# Especificamente ignorar logs e sessões do Copilot Chat
+# que podem conter segredos conforme o erro do GitHub
+.vs/*/copilot-chat/
+
+*.suo
+*.user
+*.userprefs
+*.ncb
+*.aps
+*.map
+*.bak
+*.resharper
+*.open
+*.VC.db
+*.sln.docstates
+*.vsproj.user
+*.vcxproj.user
+*.nuget/
+*.cache
+
+# Binários e artefatos de build
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.dll
+*.exe
+*.pdb
+*.obj
+*.lib
+*.ncb
+*.sql # Se for gerado e não for parte do schema
+*.sdf
+TestResults/
+*.trx
+artifacts/
+publish/
+
+# Pacotes NuGet
+packages/
+*.nupkg
+
+# Arquivos de log
+*.log
+
+# Arquivos de configurações locais e sensíveis
+# NÃO envie este arquivo, ele contém configurações locais e chaves sensíveis!
+local.settings.json
+appsettings.Development.json # Exemplo: configurações de desenvolvimento com segredos
+appsettings.json.user       # Exemplo: outro arquivo de configuração local
+*.pubxml.user               # Perfil de publicação local (pode conter credenciais)
+*.pubxml                    # << NOVO: Perfil de publicação principal (pode conter credenciais)
+*.config.user               # Outros arquivos de configuração de usuário
+serviceDependencies.json    # << NOVO: Arquivo de dependências de serviço (pode conter URLs/chaves dev)
+*.arm.json                  # << NOVO: Templates ARM (podem conter segredos/referências)
+
+
+# Arquivos de banco de dados local
+*.mdf
+*.ldf
+
+---
+# Configurações do Node.js
+# Diretório de módulos de pacotes npm
+node_modules/
+
+# Arquivos de log de debug do npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de cache e build
+.cache/
+dist/
+build/
+*.tsbuildinfo
+
+# Variáveis de ambiente
+.env
+.env.*
+.npmrc
+
+# Arquivos de lock (se não forem parte do projeto)
+# package-lock.json  # Descomente se você NÃO quiser versionar o lock file
+# yarn.lock          # Descomente se você NÃO quiser versionar o lock file
+
+---
+
+# JetBrains Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio Profiler
+*.vsp
+*.vspx
+
+# Git
+.gitattributes
+.gitkeep # Se você tem um .gitkeep para manter diretórios vazios
+
+# Outros arquivos de sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
